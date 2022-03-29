@@ -40,10 +40,11 @@ app.post("/", (req, res) => {
   //flat pack data into Json
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us14.api.mailchimp.com/3.0/lists/2925991b50";
+  const url = "https://us14.api.mailchimp.com/3.0/lists/list-id-here";//<-replace "list-id-here" with actual list id
   const options = {
     method: "POST",
-    auth: "user:9c1f9007a55445b8aa76090552680eee-us14",
+    //replace with actual api key
+    auth: "mail-chimp-api-key-here,
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
@@ -77,10 +78,10 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 //mail chimp API key
-//9c1f9007a55445b8aa76090552680eee-us14
+//
 
 //mail chimp List ID
 //
 
 //mail chimp Audience ID
-//2925991b50
+//
