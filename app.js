@@ -43,7 +43,7 @@ app.post("/", (req, res) => {
   const url = "https://us14.api.mailchimp.com/3.0/lists/2925991b50";
   const options = {
     method: "POST",
-    auth: "user:9c1f9007a55445b8aa76090552680eee-us14",
+    auth: "user:88149341f6c811ff370f668fde2c2620-us14",
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
@@ -77,7 +77,7 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 //mail chimp API key
-//9c1f9007a55445b8aa76090552680eee-us14
+//88149341f6c811ff370f668fde2c2620-us14
 
 //mail chimp List ID
 //
